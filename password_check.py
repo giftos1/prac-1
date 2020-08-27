@@ -22,6 +22,10 @@ def get_password():
     while not is_valid_password(password):
         print("Invalid password!")
         password = input("> ")
+    display_asteriks(password)
+
+
+def display_asteriks(password):
     print("Your {}-character password is valid: {}".format(len(password),
                                                            password))
 
