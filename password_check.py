@@ -14,6 +14,10 @@ def main():
     print("\t1 or more numbers")
     if SPECIAL_CHARS_REQUIRED:
         print("\tand 1 or more special characters: ", SPECIAL_CHARACTERS)
+    get_password()
+
+
+def get_password():
     password = input("> ")
     while not is_valid_password(password):
         print("Invalid password!")
